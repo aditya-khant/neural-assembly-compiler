@@ -1,0 +1,5 @@
+init_registers = torch.cuda.IntTensor(#{init_string})
+first_arg = torch.cuda.IntTensor(#{first_arg_string})
+second_arg = torch.cuda.IntTensor(#{second_arg_string})
+target = torch.cuda.IntTensor(#{target_string})
+instruction = torch.cuda.IntTensor(#{instruction_string})
