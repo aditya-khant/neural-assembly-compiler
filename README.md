@@ -1,6 +1,6 @@
-# Neural Compilation
+# Neural Assembly Compiler
 
-This folder contains the deterministic compiler that transform any program into a configuration file for the [`adaptation`](../adaptation) part of this repo.
+This repository contains an assembly to PyTorch compiler to be used with ANC. Please follow the instructions given below for the same.
 
 ## Install
 
@@ -20,3 +20,11 @@ Running `cabal install` should create the executable in `./dist/build/neulang-co
 The input program should be provided in stdin to the executable.
 For example to compile the dijkstra's implementation, run ` cat tests/dijkstra.nl | ./dist/build/neulang-compiler/neulang-compiler`.
 This will print the compiled program to stdout and create a configuration file `./dram.lua` containing this program that can be used directly by the ANC code.
+
+## References
+@article{anc,
+    title={Adaptive Neural Compilation},
+    author={Bunel, Rudy and Desmaison, Alban and Kohli, Pushmeet and Torr, Philip H.S and Kumar, M. Pawan},
+    journal={arXiv preprint arXiv:1605.07969},
+    year={2016}
+}
