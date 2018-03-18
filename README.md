@@ -19,7 +19,7 @@ Running `cabal install` should create the executable in `./dist/build/neulang-co
 
 The input program should be provided in stdin to the executable.
 For example to compile the dijkstra's implementation, run ` cat tests/dijkstra.nl | ./dist/build/neulang-compiler/neulang-compiler`.
-This will print the compiled program to stdout and create a configuration file `./dram.lua` containing this program that can be used directly by the ANC code.
+This will print the compiled program to stdout and create a configuration file `./dram.py` containing this program that can be used directly by the ANC code.
 
 ## References
 @article{anc,
