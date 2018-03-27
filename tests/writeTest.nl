@@ -1,3 +1,4 @@
 reg0 = 0;
-WRITE(reg0, 5);
+reg5 = 5;
+WRITE(reg0, reg5);
 STOP();
