@@ -1,21 +1,17 @@
-var arg1 = 0;
-var arg2 = 1;
-var arg3 = 2
-var always_zero = 0;
-var temp1 = 3;
+var zero = 0;
+var one = 1;
+var two = 2;
 
-arg1 = READ(arg1);
-arg2 = READ(arg2);
-arg3 = READ(arg3);
+var arg1 = READ(zero);
+var arg2 = READ(one);
+var arg3 = READ(two);
 
-arg1 = ADD(arg1, arg2)
-arg2 = ADD(arg1, arg2)
+arg1 = ADD(arg1, arg2);
+arg1 = ADD(arg1, arg2);
 
-temp1 = arg3
-arg3 = ADD(arg2,arg3)
-arg3 = ADD(arg3,temp1)
-arg3 = ADD(arg3,temp1)
+arg1 = ADD(arg1, arg3);
+arg1 = ADD(arg1, arg3);
+arg1 = ADD(arg1, arg3);
 
-WRITE(always_zero, arg3)
+WRITE(zero, arg1);
 STOP();
-

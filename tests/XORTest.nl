@@ -1,9 +1,13 @@
 var arg1 = 0;
 var arg2 = 1;
 var always_zero = 0;
+var always_one = 1;
 arg1 = READ(arg1);
 arg2 = READ(arg2);
-arg1 = ADD(arg1, arg2)
-JEZ(arg1, prog_end);
-
-
+arg1 = ADD(arg1, arg2);
+DEC(arg1);
+JEZ(arg1, xor_success);
+WRITE(always_zero, always_zero);
+STOP();
+xor_success:WRITE(always_zero, always_one);
+STOP();

@@ -1,4 +1,4 @@
-reg0 = 0;
-reg5 = 5;
-WRITE(reg0, reg5);
+var zero = 0;
+var five = 5;
+WRITE(zero, five);
 STOP();
